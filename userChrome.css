@@ -1,0 +1,17 @@
+:root,
+panel,
+dialog,
+window {
+  --lwt-toolbarbutton-icon-fill-attention: #b85328 !important;
+  --button-primary-bgcolor: #b85328 !important;
+  --button-primary-hover-bgcolor: #b85328 !important;
+  --button-primary-active-bgcolor: #b85328 !important;
+  --in-content-primary-button-background: #b85328 !important;
+  --in-content-primary-button-background-hover: #b85328 !important;
+  --in-content-primary-button-background-active: #b85328 !important;
+  --input-border-color: #b85328 !important;
+  --uc-checkbox-checked-bgcolor: #b85328 !important;
+  --checkbox-checked-bgcolor: #b85328 !important;
+  --focus-outline-color: #b85328 !important;
+  --in-content-link-color: #b85328 !important;
+}
