@@ -934,3 +934,22 @@ window {
     padding: 0 !important;
   }
 }
+
+@-moz-document url("about:home"), url("about:newtab") {
+  body {
+    background-color: #212121 !important;
+  }
+
+  .search-handoff-button {
+    background-color: #353535 !important;
+  }
+
+  .top-site-outer .tile,
+  .top-site-outer .top-site-icon {
+    background-color: #353535 !important;
+  }
+
+  .weatherCard:hover {
+    background-color: #2a2a2a !important;
+  }
+}

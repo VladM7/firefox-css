@@ -44,3 +44,35 @@ window {
 #urlbar[open] {
   color: var(--toolbar-field-focus-color);
 } /*  Fixes the urlbar color on some themes  */
+
+#historySwipeAnimationPreviousArrow,
+#historySwipeAnimationNextArrow {
+  --swipe-nav-icon-primary-color: #fcc2a3 !important;
+  --swipe-nav-icon-accent-color: #ffffff !important;
+}
+@media (-moz-content-prefers-color-scheme: dark) {
+  #historySwipeAnimationPreviousArrow,
+  #historySwipeAnimationNextArrow {
+    --swipe-nav-icon-primary-color: #fcc2a3 !important;
+    --swipe-nav-icon-accent-color: #000000 !important;
+  }
+}
+
+.tab-close-button {
+  display: none !important;
+}
+
+.tabbrowser-tab {
+  transition: min-width 0.4s cubic-bezier(0.27, 0.91, 0.435, 1),
+    max-width 0.4s cubic-bezier(0.27, 0.91, 0.435, 1) !important;
+  &[selected] {
+    min-width: 250px !important;
+  }
+  &[selected] .tab-close-button {
+    display: inline !important;
+  }
+}
+
+.tabbrowser-tab:hover .tab-close-button {
+  display: block !important;
+}
