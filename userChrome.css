@@ -76,3 +76,8 @@ window {
 .tabbrowser-tab:hover .tab-close-button {
   display: block !important;
 }
+
+menupopup:not(.in-menulist){
+  --panel-background: #282828 !important;
+  --panel-border-color: #282828 !important;
+}

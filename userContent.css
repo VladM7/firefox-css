@@ -941,7 +941,16 @@ window {
   }
 
   .search-handoff-button {
+    transition: all 0.5s ease;
     background-color: #353535 !important;
+  }
+
+  .search-handoff-button:hover,
+  .search-handoff-button:active,
+  .search-handoff-button:focus {
+    transition: all 0.5s ease;
+    background-color: #c63b3b !important;
+    filter: drop-shadow(15px 15px #8d50f4) !important;
   }
 
   .top-site-outer .tile,
