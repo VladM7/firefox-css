@@ -937,7 +937,15 @@ window {
 
 @-moz-document url("about:home"), url("about:newtab") {
   body {
-    background-color: #212121 !important;
+    /*background: linear-gradient(
+      -45deg,
+      #472952,
+      #68261c,
+      #212121,
+      #212121,
+      #212121
+    ) !important;*/ /*  Background gradient  */
+    background-color: #212121 !important; /*  Background color  */
   }
 
   .search-handoff-button {
@@ -960,5 +968,42 @@ window {
 
   .weatherCard:hover {
     background-color: #2a2a2a !important;
+  }
+
+  .customize-menu {
+    background-color: #514c4c !important;
+    border-radius: 5px 0 0 5px !important;
+  }
+
+  .customize-menu .close-button-wrapper {
+    background-color: transparent !important;
+  }
+
+  .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
+    background-color: transparent !important;
+  }
+
+  .top-sites-list:not(.dnd-active)
+    .top-site-outer:is(.active, :focus, :hover)
+    .tile {
+    filter: drop-shadow(10px 10px #ff3b43) !important;
+    transform: translate(-10px, -10px) !important;
+    transition: all 0.5s ease !important;
+  }
+
+  .top-sites-list .top-site-outer .tile {
+    filter: drop-shadow(0 0 #ff3b43) !important;
+    transform: translate(0, 0) !important;
+    transition: all 0.5s ease !important;
+  }
+
+  .top-site-outer .context-menu-button {
+    background-color: transparent !important;
+  }
+
+  .weatherCard,
+  .weatherInfoLink,
+  .weatherButtonContextMenu {
+    transition: background-color 0.3s ease !important;
   }
 }
