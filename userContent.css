@@ -936,6 +936,11 @@ window {
 }
 
 @-moz-document url("about:home"), url("about:newtab") {
+  * {
+    font-family: "Styrene B Trial" !important; /*  Font  */
+    font-weight: normal !important;
+  }
+
   body {
     /*background: linear-gradient(
       -45deg,
@@ -957,7 +962,7 @@ window {
   .search-handoff-button:active,
   .search-handoff-button:focus {
     transition: all 0.5s ease;
-    background-color: #c63b3b !important;
+    background-color: #ff3b43 !important;
     filter: drop-shadow(15px 15px #8d50f4) !important;
   }
 
@@ -1005,5 +1010,30 @@ window {
   .weatherInfoLink,
   .weatherButtonContextMenu {
     transition: background-color 0.3s ease !important;
+  }
+
+  .card,
+  .compact-cards .card-outer .card-context {
+    background-color: #353535 !important;
+  }
+
+  .card:hover {
+    filter: drop-shadow(10px 10px #8d50f4) !important;
+    transform: translate(-10px, -10px) !important;
+    transition: all 0.5s ease !important;
+  }
+
+  .card {
+    filter: drop-shadow(0 0 #8d50f4) !important;
+    transform: translate(0, 0) !important;
+    transition: all 0.5s ease !important;
+  }
+
+  .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
+    color: white !important;
+  }
+
+  .context-menu {
+    background-color: #4b4b4b !important;
   }
 }
