@@ -14,6 +14,9 @@ window {
   --checkbox-checked-bgcolor: #f7a083 !important;
   --focus-outline-color: #f7a083 !important;
   --in-content-link-color: #f7a083 !important;
+  --color-accent-primary: #f7a083 !important;
+  --color-accent-primary-active: #f7a083 !important;
+  --newtab-primary-action-background: #f7a083 !important;
 }
 
 @-moz-document url-prefix(about:devtools), url-prefix(chrome:) {

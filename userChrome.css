@@ -1,19 +1,20 @@
+/* Custom accent color */
 :root,
 panel,
 dialog,
 window {
-  --lwt-toolbarbutton-icon-fill-attention: #b85328 !important;
-  --button-primary-bgcolor: #b85328 !important;
-  --button-primary-hover-bgcolor: #b85328 !important;
-  --button-primary-active-bgcolor: #b85328 !important;
-  --in-content-primary-button-background: #b85328 !important;
-  --in-content-primary-button-background-hover: #b85328 !important;
-  --in-content-primary-button-background-active: #b85328 !important;
-  --input-border-color: #b85328 !important;
-  --uc-checkbox-checked-bgcolor: #b85328 !important;
-  --checkbox-checked-bgcolor: #b85328 !important;
-  --focus-outline-color: #b85328 !important;
-  --in-content-link-color: #b85328 !important;
+  --lwt-toolbarbutton-icon-fill-attention: #f7a083 !important;
+  --button-primary-bgcolor: #f7a083 !important;
+  --button-primary-hover-bgcolor: #f7a083 !important;
+  --button-primary-active-bgcolor: #f7a083 !important;
+  --in-content-primary-button-background: #f7a083 !important;
+  --in-content-primary-button-background-hover: #f7a083 !important;
+  --in-content-primary-button-background-active: #f7a083 !important;
+  --input-border-color: #f7a083 !important;
+  --uc-checkbox-checked-bgcolor: #f7a083 !important;
+  --checkbox-checked-bgcolor: #f7a083 !important;
+  --focus-outline-color: #f7a083 !important;
+  --in-content-link-color: #f7a083 !important;
 }
 
 /*  Clean and tight extensions menu */
@@ -71,7 +72,7 @@ window {
   padding-bottom: 2px !important;
 }
 
-/*  Devtools  */
+/*  Devtools - rounded corners */
 .devtools-horizontal-splitter {
   margin-top: 7px !important;
   margin-bottom: -12px !important;
@@ -117,22 +118,68 @@ window {
   display: none !important;
 }
 
+/* Tab width animation */
+
+/*
 .tabbrowser-tab {
-  transition: min-width 0.4s cubic-bezier(0.27, 0.91, 0.435, 1),
-    max-width 0.4s cubic-bezier(0.27, 0.91, 0.435, 1) !important;
   &[selected] {
     min-width: 250px !important;
   }
+}
+*/
+
+.tabbrowser-tab {
+  transition: all 0.4s cubic-bezier(0.27, 0.91, 0.435, 1) !important;
   &[selected] .tab-close-button {
     display: inline !important;
   }
 }
 
+/* Tab close button display only on hover */
+
 .tabbrowser-tab:hover .tab-close-button {
   display: block !important;
 }
 
+/* Context menu custom colors */
+
 menupopup:not(.in-menulist) {
   --panel-background: #282828 !important;
   --panel-border-color: #282828 !important;
+}
+
+/* Other custom colors */
+
+.urlbarView-row {
+  &[selected] {
+    background-color: #ff3b43 !important;
+  }
+}
+
+.searchbar-engine-one-off-item[selected] {
+  background-color: #ff3b43 !important;
+}
+
+&[lwtheme] {
+  --link-color: #f7a083 !important;
+}
+
+/* Cleaner downloads panel */
+
+#downloadsFooterButtons > toolbarseparator {
+  display: none !important;
+}
+
+.downloadButton {
+  visibility: hidden !important;
+  /*transform: translateX(4px) !important;*/
+  -moz-margin-end: -3px !important;
+  transition: ease-in-out all 50ms !important;
+}
+
+.download-state:hover .downloadButton {
+  visibility: visible !important;
+  /*transform: translateX(0px) !important;*/
+  -moz-margin-end: initial !important;
+  transition: 300ms !important;
 }
