@@ -15,6 +15,8 @@ window {
   --checkbox-checked-bgcolor: #f7a083 !important;
   --focus-outline-color: #f7a083 !important;
   --in-content-link-color: #f7a083 !important;
+
+  --urlbar-box-hover-bgcolor: #ffffff25 !important;
 }
 
 /*  Clean and tight extensions menu */
@@ -32,8 +34,8 @@ window {
 }
 
 #unified-extensions-view .panel-subview-body {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 
 #unified-extensions-view:hover
@@ -68,8 +70,8 @@ window {
 }
 
 #unified-extensions-view .unified-extensions-item-action-button.subviewbutton {
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
 }
 
 /*  Devtools - rounded corners */
@@ -182,4 +184,14 @@ menupopup:not(.in-menulist) {
   /*transform: translateX(0px) !important;*/
   -moz-margin-end: initial !important;
   transition: 300ms !important;
+}
+
+/* Hide unused options like "Print" and "Save page as" from menu */
+
+#appMenu-print-button2 {
+  display: none !important;
+}
+
+#appMenu-save-file-button2 {
+  display: none !important;
 }
