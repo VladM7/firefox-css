@@ -17,6 +17,8 @@ window {
   --in-content-link-color: #f7a083 !important;
 
   --urlbar-box-hover-bgcolor: #ffffff25 !important;
+
+  font-family: "Monocraft" !important;
 }
 
 /*  Clean and tight extensions menu */
