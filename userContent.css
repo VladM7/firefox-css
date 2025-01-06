@@ -958,7 +958,8 @@ window {
 
   .search-handoff-button {
     transition: all 0.5s ease;
-    background-color: #353535 !important;
+    /* background-color: #353535 !important; */
+    background: #353535 url("./img/ducky3.png") 10px center no-repeat !important;
     border-radius: 0% !important;
     background-color: #212121 !important;
     box-shadow: 0px 0px 0px 0px #212121 !important;
@@ -1043,18 +1044,20 @@ window {
 
   .context-menu {
     background-color: #4b4b4b !important;
+    border-radius: 0 !important;
+    box-shadow: #131313 -4px 4px 4px 0px !important;
   }
 
   .logo {
     width: 2300px !important;
-    background: url("firefox-logo-pixel.png") no-repeat center !important;
+    background: url("./img/firefox-logo-pixel.png") no-repeat center !important;
     zoom: 2.4% !important;
     height: 2300px !important;
   }
 
   .logo-and-wordmark .wordmark {
     width: 200px !important;
-    background: url("firefox-text.svg") no-repeat center !important;
+    background: url("./img/firefox-text.svg") no-repeat center !important;
   }
 
   .top-site-outer .tile {

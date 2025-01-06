@@ -18,7 +18,7 @@ window {
 
   --urlbar-box-hover-bgcolor: #ffffff25 !important;
 
-  font-family: "Monocraft" !important;
+  /* font-family: "Monocraft" !important; */
 }
 
 /*  Clean and tight extensions menu */
@@ -133,9 +133,14 @@ window {
 */
 
 .tabbrowser-tab {
+  font-family: "Monocraft" !important;
   transition: all 0.4s cubic-bezier(0.27, 0.91, 0.435, 1) !important;
   &[selected] .tab-close-button {
     display: inline !important;
+  }
+
+  &[selected] .tab-background {
+    box-shadow: -4px 4px 4px 0px black !important;
   }
 }
 
@@ -197,3 +202,40 @@ menupopup:not(.in-menulist) {
 #appMenu-save-file-button2 {
   display: none !important;
 }
+
+.tab-background,
+.tab-loading-burst {
+  transition: box-shadow ease-out 0.2s !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.tab-close-button {
+  border-radius: 0px !important;
+}
+
+#TabsToolbar .toolbarbutton-1 {
+  & > .toolbarbutton-icon, & > .toolbarbutton-text, & > .toolbarbutton-badge-stack {
+    border-radius: 0px !important;
+  }
+}
+
+/*
+#reload-button {
+  list-style-image: url("./img/refresh.svg") !important;
+}
+
+#back-button {
+  list-style-image: url("./img/arrow-left.svg") !important;
+}
+
+#forward-button {
+  list-style-image: url("./img/arrow-right.svg") !important;
+}
+
+#identity-box[pageproxystate="invalid"] {
+  & #identity-icon {
+    list-style-image: url("./img/search.svg") !important;
+  }
+}
+*/
