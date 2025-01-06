@@ -1036,6 +1036,7 @@ window {
     filter: drop-shadow(0 0 #8d50f4) !important;
     transform: translate(0, 0) !important;
     transition: all 0.5s ease !important;
+    border-radius: 0px !important;
   }
 
   .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
@@ -1046,6 +1047,10 @@ window {
     background-color: #4b4b4b !important;
     border-radius: 0 !important;
     box-shadow: #131313 -4px 4px 4px 0px !important;
+  }
+
+  .card-outer .context-menu-button {
+    border-radius: 0px !important;
   }
 
   .logo {
