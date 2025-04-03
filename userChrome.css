@@ -1,3 +1,5 @@
+@import url("extensionsMenu.css");
+
 /* Custom accent color */
 :root,
 panel,
@@ -16,67 +18,15 @@ window {
   --focus-outline-color: #f7a083 !important;
   --in-content-link-color: #f7a083 !important;
 
+  /* --panel-border-radius: 0px !important; */
+
   --urlbar-box-hover-bgcolor: #ffffff25 !important;
 
   /* font-family: "Monocraft" !important; */
 }
 
-/*  Clean and tight extensions menu */
-#unified-extensions-view .panel-header,
-#unified-extensions-view .panel-header + toolbarseparator,
-#unified-extensions-view .panel-subview-body + toolbarseparator,
-#unified-extensions-view #unified-extensions-manage-extensions {
-  display: none !important;
-}
-
-#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton {
-  visibility: hidden !important;
-  transition: 300ms !important;
-  -moz-margin-end: -3.6em !important;
-}
-
-#unified-extensions-view .panel-subview-body {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-}
-
-#unified-extensions-view:hover
-  .unified-extensions-item-menu-button.subviewbutton {
-  visibility: visible !important;
-  transition: 300ms !important;
-  -moz-margin-end: initial !important;
-}
-
-#unified-extensions-view .unified-extensions-item-icon,
-#unified-extensions-view
-  .unified-extensions-item[unified-extensions="true"]
-  .webextension-browser-action
-  > .toolbarbutton-badge-stack
-  > .toolbarbutton-icon {
-  height: 20px !important;
-  width: 20px !important;
-}
-
-#unified-extensions-view .unified-extensions-item-icon,
-#unified-extensions-view
-  .unified-extensions-item[unified-extensions="true"]
-  .webextension-browser-action
-  > .toolbarbutton-badge-stack {
-  margin-inline-end: 2px !important;
-}
-
-#unified-extensions-view .unified-extensions-item-name,
-#unified-extensions-view .unified-extensions-item-message {
-  padding-inline-start: 0.5em !important;
-  width: 21em !important;
-}
-
-#unified-extensions-view .unified-extensions-item-action-button.subviewbutton {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
-}
-
 /*  Devtools - rounded corners */
+
 .devtools-horizontal-splitter {
   margin-top: 7px !important;
   margin-bottom: -12px !important;
@@ -118,44 +68,24 @@ window {
   }
 }
 
-.tab-close-button {
-  display: none !important;
-}
-
-/* Tab width animation */
-
-/*
-.tabbrowser-tab {
-  &[selected] {
-    min-width: 250px !important;
-  }
-}
-*/
-
-.tabbrowser-tab {
-  font-family: "Monocraft" !important;
-  transition: all 0.4s cubic-bezier(0.27, 0.91, 0.435, 1) !important;
-  &[selected] .tab-close-button {
-    display: inline !important;
-  }
-
-  &[selected] .tab-background {
-    box-shadow: -4px 4px 4px 0px black !important;
-  }
-}
-
 /* Tab close button display only on hover */
 
 .tabbrowser-tab:hover .tab-close-button {
   display: block !important;
 }
 
-/* Context menu custom colors */
+/* Context menu custom colors and font
 
 menupopup:not(.in-menulist) {
   --panel-background: #282828 !important;
   --panel-border-color: #282828 !important;
 }
+
+menupopup {
+  --panel-border-radius: 0px !important;
+  --panel-width: 250px !important;
+  font-family: "Monocraft" !important;
+} */
 
 /* Other custom colors */
 
@@ -203,6 +133,8 @@ menupopup:not(.in-menulist) {
   display: none !important;
 }
 
+/* Make the tabs squared and add a shadow */
+
 .tab-background,
 .tab-loading-burst {
   transition: box-shadow ease-out 0.2s !important;
@@ -211,12 +143,37 @@ menupopup:not(.in-menulist) {
 }
 
 .tab-close-button {
+  display: none !important;
   border-radius: 0px !important;
 }
 
 #TabsToolbar .toolbarbutton-1 {
-  & > .toolbarbutton-icon, & > .toolbarbutton-text, & > .toolbarbutton-badge-stack {
+  & > .toolbarbutton-icon,
+  & > .toolbarbutton-text,
+  & > .toolbarbutton-badge-stack {
     border-radius: 0px !important;
+  }
+}
+
+/* Tab width animation */
+
+/*
+.tabbrowser-tab {
+  &[selected] {
+    min-width: 250px !important;
+  }
+}
+*/
+
+.tabbrowser-tab {
+  font-family: "Monocraft" !important;
+  transition: all 0.4s cubic-bezier(0.27, 0.91, 0.435, 1) !important;
+  &[selected] .tab-close-button {
+    display: inline !important;
+  }
+
+  &[selected] .tab-background {
+    box-shadow: -4px 4px 4px 0px black !important;
   }
 }
 
