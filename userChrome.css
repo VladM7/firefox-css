@@ -22,6 +22,8 @@ window {
 
   --urlbar-box-hover-bgcolor: #ffffff25 !important;
 
+  font-family: "Styrene B Trial", "Bahnschrift" !important;
+
   /* font-family: "Monocraft" !important; */
 }
 
@@ -177,8 +179,23 @@ menupopup {
   }
 }
 
-/*
-#reload-button {
+/* Icons */
+
+.bookmark-item[type="menu"] image {
+  /* display: block !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  width: 16px !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  list-style-image: url("./icons/folder-icon.ico") !important;
+  background: url("./icons/folder-icon.ico") !important; */
+  width: 18px !important;
+  height: 16px !important;
+  content: url("./icons/folder-icon.ico") !important;
+}
+
+/* #reload-button {
   list-style-image: url("./img/refresh.svg") !important;
 }
 
@@ -194,5 +211,4 @@ menupopup {
   & #identity-icon {
     list-style-image: url("./img/search.svg") !important;
   }
-}
-*/
+} */
